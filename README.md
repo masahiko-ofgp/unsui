@@ -10,6 +10,5 @@ Put your `.vim/colors` directory.
 
 Write `.vimrc`.
 
-    syntax on
     colorscheme unsui
-
+    syntax on
