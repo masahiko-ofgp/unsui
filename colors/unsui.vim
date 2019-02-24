@@ -127,3 +127,7 @@ hi SpellLocal      ctermfg=none    ctermbg=none    cterm=none
 hi SpellRare       ctermfg=none    ctermbg=none    cterm=none
 
 " --- Specific settings ---
+hi link pythonDecorator StorageClass
+hi link pythonDottedname StorageClass
+hi link pythonClass Normal
+hi link pythonExClass StorageClass

@@ -12,3 +12,4 @@ Write `.vimrc`.
 
     syntax on
     colorscheme unsui
+
