@@ -2,6 +2,8 @@
 
 vim colorscheme (quiet, dark, simple, japonism)
 
+<image src="./images/unsui.png" alt="unsui-screenshot" width="70%">
+
 ## Usage
 
 Copy `unsui.vim`.
