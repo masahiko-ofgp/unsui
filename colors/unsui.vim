@@ -5,7 +5,7 @@
 " Maintainer: Masahiko Hamazawa <ichigyo.zanmai@gmail.com>
 " License:    MIT
 " Created:    2019-02-23
-" Updated:    2019-02-24 
+" Updated:    2019-02-26 
 
 if !has('qui_running') && &t_Co < 256
   finish
@@ -15,7 +15,7 @@ set background=dark
 highlight clear
 
 if exists("syntax_on")
-    syntax reset
+  syntax reset
 endif
 
 let g:colors_name="unsui"
@@ -23,9 +23,9 @@ let g:colors_name="unsui"
 " --- Editor settings ---
 hi Normal          ctermfg=230    ctermbg=233    cterm=none
 hi Cursor          ctermfg=none    ctermbg=none    cterm=none
-hi CursorLine      ctermfg=none    ctermbg=none    cterm=none
+hi CursorLine      ctermfg=none    ctermbg=232    cterm=none
 hi LineNr          ctermfg=113    ctermbg=234    cterm=none
-hi CursorLineNR    ctermfg=none    ctermbg=none    cterm=none
+hi CursorLineNR    ctermfg=131    ctermbg=234    cterm=none
 
 " --- Number column ---
 hi CursorColumn    ctermfg=none    ctermbg=none    cterm=none
@@ -41,18 +41,18 @@ hi TabLineFill     ctermfg=none    ctermbg=none    cterm=none
 hi TabLineSel      ctermfg=none    ctermbg=none    cterm=none
 
 " --- File Navigation / Searching ---
-hi Directory       ctermfg=none    ctermbg=none    cterm=none
+hi Directory       ctermfg=131    ctermbg=234    cterm=none
 hi Search          ctermfg=none    ctermbg=none    cterm=none
 hi IncSearch       ctermfg=none    ctermbg=none    cterm=none
 
 " --- Prompt/Status ---
-hi StatusLine      ctermfg=94    ctermbg=234    cterm=none
-hi StatusLineNC    ctermfg=none    ctermbg=none    cterm=none
-hi WildMenu        ctermfg=none    ctermbg=none    cterm=none
-hi Question        ctermfg=none    ctermbg=none    cterm=none
-hi Title           ctermfg=none    ctermbg=none    cterm=none
-hi ModeMsg         ctermfg=none    ctermbg=none    cterm=none
-hi MoreMsg         ctermfg=none    ctermbg=none    cterm=none
+hi StatusLine      ctermfg=113    ctermbg=234    cterm=none
+hi StatusLineNC    ctermfg=113    ctermbg=234    cterm=none
+hi WildMenu        ctermfg=113    ctermbg=234    cterm=none
+hi Question        ctermfg=113    ctermbg=234    cterm=none
+hi Title           ctermfg=113    ctermbg=234    cterm=none
+hi ModeMsg         ctermfg=131    ctermbg=234    cterm=none
+hi MoreMsg         ctermfg=113    ctermbg=234    cterm=none
 
 " --- Visual aid ---
 hi MatchParen      ctermfg=none    ctermbg=none    cterm=none
@@ -72,7 +72,7 @@ hi SpecialKey      ctermfg=none    ctermbg=none    cterm=none
 hi Constant        ctermfg=113    ctermbg=none    cterm=none
 hi String          ctermfg=101    ctermbg=none    cterm=none
 hi StringDelimiter ctermfg=101    ctermbg=none    cterm=none
-hi Character       ctermfg=none    ctermbg=none    cterm=none
+hi Character       ctermfg=131    ctermbg=none    cterm=none
 hi Number          ctermfg=none    ctermbg=none    cterm=none
 hi Boolean         ctermfg=none    ctermbg=none    cterm=none
 hi Float           ctermfg=none    ctermbg=none    cterm=none
@@ -84,7 +84,7 @@ hi Function        ctermfg=none    ctermbg=none    cterm=none
 hi Statement       ctermfg=113    ctermbg=none    cterm=none
 hi Conditional     ctermfg=113    ctermbg=none    cterm=none
 hi Repeat          ctermfg=113    ctermbg=none    cterm=none
-hi Label           ctermfg=none    ctermbg=none    cterm=none
+hi Label           ctermfg=113    ctermbg=none    cterm=none
 hi Operator        ctermfg=113    ctermbg=none    cterm=none
 hi Keyword         ctermfg=113    ctermbg=none    cterm=none
 hi Exception       ctermfg=113    ctermbg=none    cterm=none
@@ -93,20 +93,20 @@ hi Comment         ctermfg=240    ctermbg=none    cterm=none
 hi Special         ctermfg=101    ctermbg=none    cterm=none
 hi SpecialChar     ctermfg=none    ctermbg=none    cterm=none
 hi Tag             ctermfg=none    ctermbg=none    cterm=none
-hi Delimiter       ctermfg=none    ctermbg=none    cterm=none
-hi SpecialComment  ctermfg=none    ctermbg=none    cterm=none
+hi Delimiter       ctermfg=131    ctermbg=none    cterm=none
+hi SpecialComment  ctermfg=240    ctermbg=none    cterm=none
 hi Debug           ctermfg=none    ctermbg=none    cterm=none
 
 hi PreProc         ctermfg=101    ctermbg=none    cterm=none
 hi Include         ctermfg=none    ctermbg=none    cterm=none
 hi Define          ctermfg=none    ctermbg=none    cterm=none
-hi Macro           ctermfg=none    ctermbg=none    cterm=none
+hi Macro           ctermfg=113    ctermbg=none    cterm=none
 hi PreCondit       ctermfg=none    ctermbg=none    cterm=none
 
 hi Type            ctermfg=101    ctermbg=none    cterm=none
 hi StorageClass    ctermfg=131    ctermbg=none    cterm=none
-hi Structure       ctermfg=none    ctermbg=none    cterm=none
-hi Typedef         ctermfg=none    ctermbg=none    cterm=none
+hi Structure       ctermfg=113    ctermbg=none    cterm=none
+hi Typedef         ctermfg=113    ctermbg=none    cterm=none
 
 " --- Diff ---
 hi DiffAdd         ctermfg=none    ctermbg=none    cterm=none
@@ -126,8 +126,6 @@ hi SpellCap        ctermfg=none    ctermbg=none    cterm=none
 hi SpellLocal      ctermfg=none    ctermbg=none    cterm=none
 hi SpellRare       ctermfg=none    ctermbg=none    cterm=none
 
-" --- Specific settings ---
+" --- Python settings ---
 hi link pythonDecorator StorageClass
-hi link pythonDottedname StorageClass
-hi link pythonClass Normal
-hi link pythonExClass StorageClass
+hi link pythonDecoratorName StorageClass
