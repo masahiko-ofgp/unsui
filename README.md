@@ -6,9 +6,11 @@ vim colorscheme (quiet, dark, simple, japonism)
 
 ## Usage
 
-Copy `unsui.vim`.
+- Copy `unsui.vim`.
 
-Put your `.vim/colors` directory.
+- Put your `.vim/colors` directory.
+
+- Write `syntax on` and `color unsui` on `.vimrc`.
 
 My `.vimrc`.
     
@@ -21,10 +23,11 @@ My `.vimrc`.
     set number
     set statusline=%F
     set cursorline
-
-    colorscheme unsui
+    set fdm=marker
+    
     syntax on
-
+    color unsui
+    
     inoremap <silent> jj <ESC>
     inoremap <C-j> <down>
     inoremap <C-k> <up>
