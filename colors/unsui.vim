@@ -194,6 +194,7 @@ call s:h('UnsuiPurpleItalic', s:purple, s:none, [s:attrs.italic])
 
 call s:h('UnsuiRed', s:red)
 call s:h('UnsuiRedInverse', s:fg, s:red)
+call s:h('UnsuiRedBlod', s:red, s:none, [s:attrs.bold])
 
 call s:h('UnsuiYellow', s:yellow)
 call s:h('UnsuiYellowItalic', s:yellow, s:none, [s:attrs.italic])
@@ -324,6 +325,8 @@ hi! link helpBacktick Special
 
 " Rust setting: {{{
 hi! link rustCommentLineDoc Comment
+hi! link rustDeriveTrait UnsuiRedBlod
+hi! link rustSelf UnsuiCyanItalic
 " }}}
 
 " Lisp setting: {{{
@@ -351,6 +354,12 @@ hi! link cStructure UnsuiGreen
 hi! link cType UnsuiCyan
 hi! link cInclude UnsuiRed
 hi! link cIncluded UnsuiRed
+" }}}
+"
+" Java setting: {{{
+hi! link javaExternal UnsuiGreen
+hi! link javaStorageClass UnsuiGreen
+hi! link javaType UnsuiPink
 " }}}
 
 " vim: fdm=marker ts=2 sts=2 sw=2:
