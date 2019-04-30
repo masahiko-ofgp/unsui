@@ -322,6 +322,10 @@ hi! link helpBacktick Special
 
 "}}}
 
+" Rust setting: {{{
+hi! link rustCommentLineDoc Comment
+" }}}
+
 " Lisp setting: {{{
 
 hi! link lispKey UnsuiCyanItalic
